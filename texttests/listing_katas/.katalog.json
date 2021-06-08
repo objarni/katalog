@@ -1,8 +1,7 @@
 {
 	"kata1": {
-
+		"url":  "https://hejsan.se",
+		"lang": ["C", "C++"]
 	},
-	"kata2": {
-	
-	}
+	"kata2": {}
 }

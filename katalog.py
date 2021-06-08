@@ -30,6 +30,8 @@ def show(kataid):
         print(f"Kata ID:   {kataid}")
         print(f"Kata URL:  {kata['url']}")
         print(f"Languages: {', '.join(kata['lang'])}")
+    else:
+        print(f"'{kataid}' not found!")
 
 
 @cli.command()
