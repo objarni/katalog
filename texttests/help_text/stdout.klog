@@ -1,0 +1,10 @@
+Usage: katalog.py [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  add      Add a kata to katalog
+  list     List known katas
+  refresh  Re-check languages for kata
+  show     Show information about kata
