@@ -1,6 +1,6 @@
 import click
 from lib.db import load_db, save_db
-from lib.fetch_lang import fetch_lang
+from fetch_lang import fetch_lang
 
 
 @click.group()
@@ -38,12 +38,13 @@ def show(kataid):
 @click.argument("url")
 def add(url):
     """Add a kata to katalog"""
-    kataid = input("Kata ID: ")
+    kataid = input("Enter kata ID: ")
     print("Fetching languages...")
     lang = fetch_lang(url)
     db = load_db()
     db[kataid] = {"url": url, "lang": lang}
     save_db(db)
+    show(kataid)
 
 
 @cli.command()
