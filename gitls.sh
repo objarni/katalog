@@ -1,3 +1,8 @@
+#!/usr/bin/env bash
+#
+# Lists the root folder of given git repo, which
+# is given in argument 1 to script
+
 WORKDIR=/tmp/gitls
 
 clone() {
@@ -13,5 +18,6 @@ clean_workdir() {
 
 clean_workdir
 clone $1 $WORKDIR
+echo "*** The root content of repo is ***"
 ls $WORKDIR
 clean_workdir
